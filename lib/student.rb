@@ -25,7 +25,7 @@ class Student
   def self.drop_table
   end
 
-  def self.save
+  def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
       VALUES (?, ?)
